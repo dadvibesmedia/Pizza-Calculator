@@ -1,0 +1,89 @@
+pizza_cost = 0
+
+## User Input ##
+
+print("What size of pizza would you like: ")
+
+print()
+
+print("Small - $5, Medium - $7 or Large - $10? ")
+
+print()
+
+user_pick = input("Please choose one S, M, or L: ")
+
+if user_pick == "S":
+     pizza_cost += 5
+
+elif user_pick == "M":
+    pizza_cost += 7
+    
+elif user_pick == "L":
+    
+    pizza_cost += 10
+    print()
+    
+else: 
+    print()
+    print("Please Select Correct Option! ")
+    
+print()
+
+### Toppings ####
+
+print("What type of toppings would you want on the pizza: ")
+
+print()
+
+print("Pepperoni, Mushrooms, or Olives? ")
+
+print()
+
+top_pick = input("Choose one of the following: P, M, O or put ALL for all topping included: ")
+
+
+if top_pick == "P":
+    pizza_cost += 1
+    
+elif top_pick == "M":
+    pizza_cost += 1
+    
+elif top_pick == "O":
+    pizza_cost += 1
+    
+elif top_pick == "ALL":
+    pizza_cost += 3
+    print()
+    
+else: 
+    print()
+    print("Please Select Correct Option! ")
+
+
+#### ---- OUTPUT ---- ####
+
+print()
+
+print("Hold On, Would you like it delveried: ") 
+
+print()
+
+print("$10 Delvery fee will apply!")
+
+print()
+
+delver = input("Yes or No! ")
+
+if delver == "Yes":
+    pizza_cost += 10
+    print()
+
+print("Let's Get Your Pizza Going! Total will be below! ")
+
+print()
+
+print("---------------------")
+
+print()
+
+print("Your Total: " + str(pizza_cost) + " Dollars!")
